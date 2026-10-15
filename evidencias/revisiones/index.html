@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revisión por pares · Dr. Héctor Aguilar Bolados — A²P²·Nano Group</title>
+<meta name="description" content="Registro de actividad de revisión por pares de manuscritos para revistas científicas internacionales. Dr. Héctor Aguilar Bolados — ORCID 0000-0002-5927-9494. Verificado en Web of Science, ACS, Springer Nature y Wiley.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Revisión por pares · Dr. Héctor Aguilar Bolados">
+<meta property="og:description" content="Registro público de actividad de peer review verificada en ORCID. 52 revisiones en 14 revistas ISI/Scopus. A²P²·Nano Group, Universidad de Concepción.">
+<meta property="og:url" content="https://a2p2nano.com/evidencias/revisiones/">
+<meta property="og:site_name" content="A²P²·Nano Group">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9N86EPX3T1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9N86EPX3T1');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --g:  #5C1020;
+    --gd: #3D0B16;
+    --gl: #F9ECED;
+    --gm: #D4A8AA;
+    --bg: #F5F5F5;
+    --surface: #ffffff;
+    --border: #DEDEDE;
+    --text: #111111;
+    --muted: #444444;
+    --hint: #888888;
+    --serif: 'Libre Baskerville', serif;
+    --sans: 'Outfit', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.75; font-size: 15px; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 40px; height: 76px;
+    background: #fff; border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { display: flex; align-items: center; gap: 12px; cursor: pointer; text-decoration: none; }
+  .nav-logo { display:inline-flex; flex-direction:column; flex-shrink:0; border:1.5px solid var(--g); border-radius:6px; overflow:hidden; }
+  .nav-logo-top {
+    background: var(--g); padding: 8px 16px 6px;
+    font-family: var(--serif); font-size: 22px; font-weight: 700; color: #fff;
+    line-height: 1; display:flex; align-items:flex-start; justify-content:center; gap:8px;
+  }
+  .nav-logo-top .letter { display:inline-flex; align-items:flex-start; gap:2px; }
+  .nav-logo-top .exp { font-size:13px; font-weight:700; line-height:1; margin-top:1px; }
+  .nav-logo-mid { height:2px; background:#fff; }
+  .nav-logo-bot {
+    background: #fff; padding: 6px 16px;
+    font-family: var(--serif); font-size:13px; font-style:italic;
+    color: var(--g); text-align:center; font-weight:400; letter-spacing:0.04em;
+  }
+  .nav-title { display: flex; flex-direction: column; }
+  .nav-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.2; }
+  .nav-sub  { font-size: 10px; color: var(--hint); letter-spacing: 0.04em; }
+  .nav-back { font-size: 12.5px; color: var(--muted); text-decoration: none; display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 4px; border: 1px solid var(--border); transition: background 0.15s; white-space: nowrap; }
+  .nav-back:hover { background: var(--gl); color: var(--g); border-color: var(--gm); }
+
+  /* ── HERO ── */
+  .page-hero {
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 52px 48px 40px;
+  }
+  .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--g); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .eyebrow-line { width: 22px; height: 1px; background: var(--g); flex-shrink: 0; }
+  .page-h { font-family: var(--serif); font-size: 34px; line-height: 1.2; color: var(--text); font-weight: 700; margin-bottom: 10px; }
+  .page-sub { font-size: 15px; color: var(--muted); margin-bottom: 24px; max-width: 680px; line-height: 1.8; }
+
+  /* ── ORCID BADGE ── */
+  .orcid-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #fff; border: 1.5px solid #A6CE39; border-radius: 6px;
+    padding: 10px 16px; text-decoration: none;
+    transition: background 0.15s;
+  }
+  .orcid-badge:hover { background: #F7FBE8; }
+  .orcid-logo { width: 24px; height: 24px; flex-shrink: 0; }
+  .orcid-text { display: flex; flex-direction: column; }
+  .orcid-label { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #888; line-height: 1; margin-bottom: 2px; }
+  .orcid-id { font-size: 13px; font-weight: 500; color: #333; font-family: monospace; }
+
+  /* ── STAT STRIP ── */
+  .stat-strip { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--gd); }
+  .stat-strip-item { padding: 22px 28px; border-right: 1px solid #4A1020; }
+  .stat-strip-item:last-child { border-right: none; }
+  .stat-strip-n { font-family: var(--serif); font-size: 30px; color: #fff; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+  .stat-strip-l { font-size: 12px; color: var(--gm); font-weight: 300; }
+
+  /* ── LAYOUT ── */
+  .content-wrap { max-width: 1100px; margin: 0 auto; padding: 40px 48px; display: flex; flex-direction: column; gap: 36px; }
+
+  /* ── CARDS ── */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .card-head { padding: 18px 24px 14px; border-bottom: 1px solid var(--border); display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .card-title { font-family: var(--serif); font-size: 15px; color: var(--text); font-weight: 700; }
+  .card-note { font-size: 12px; color: var(--hint); }
+
+  /* ── TABLA RESUMEN ── */
+  .tbl { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .tbl thead tr { background: var(--bg); }
+  .tbl thead th { padding: 10px 16px; text-align: left; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--hint); border-bottom: 1px solid var(--border); }
+  .tbl thead th.num { text-align: right; }
+  .tbl tbody tr { border-bottom: 1px solid var(--bg); transition: background 0.1s; }
+  .tbl tbody tr:last-child { border-bottom: none; }
+  .tbl tbody tr:hover { background: var(--bg); }
+  .tbl td { padding: 11px 16px; vertical-align: middle; color: var(--muted); }
+  .tbl td.journal { color: var(--text); font-weight: 500; }
+  .tbl td.issn { font-family: monospace; font-size: 12px; color: var(--hint); }
+  .tbl td.num { text-align: right; font-family: var(--serif); font-size: 18px; color: var(--g); font-weight: 700; }
+  .tbl tbody tr.top-row td { }
+  .tbl tfoot tr { background: var(--gl); border-top: 1px solid var(--gm); }
+  .tbl tfoot td { padding: 10px 16px; font-size: 12px; color: var(--g); font-weight: 500; }
+  .tbl tfoot td.total-n { text-align: right; font-family: var(--serif); font-size: 20px; color: var(--g); font-weight: 700; }
+
+  /* ── TABLA DETALLE ── */
+  .tbl2 { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .tbl2 thead tr { background: var(--gd); }
+  .tbl2 thead th { padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gm); }
+  .tbl2 tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+  .tbl2 tbody tr:last-child { border-bottom: none; }
+  .tbl2 tbody tr:hover { background: var(--bg); }
+  .tbl2 tbody tr.yr-2024 { }
+  .tbl2 tbody tr.yr-2025 { }
+  .tbl2 td { padding: 10px 14px; vertical-align: middle; color: var(--muted); line-height: 1.4; }
+  .tbl2 td.year { font-family: var(--serif); font-size: 15px; color: var(--g); font-weight: 700; white-space: nowrap; }
+  .tbl2 td.journal2 { color: var(--text); font-weight: 500; }
+  .tbl2 td.journal2.dash { color: var(--hint); font-style: italic; font-weight: 400; }
+  .tbl2 td.rev-id { font-family: monospace; font-size: 11.5px; color: #555; word-break: break-all; }
+  .tbl2 td.source { font-size: 12px; }
+  .source-badge { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.07em; padding: 2px 8px; border-radius: 3px; white-space: nowrap; }
+  .src-wos { background: #E3F0FB; color: #1A5276; }
+  .src-acs { background: #FFF3E0; color: #7D3C00; }
+  .src-sn  { background: #E8F5E9; color: #1B5E20; }
+  .src-wil { background: #F3E5F5; color: #4A148C; }
+
+  /* ── SUBTOTALS ── */
+  .subtotal-row td { background: var(--gl); font-size: 12px; color: var(--g); font-weight: 500; border-top: 1px solid var(--gm); border-bottom: 1px solid var(--gm); }
+
+  /* ── SUMMARY ROW ── */
+  .summary-bar { background: var(--gl); border: 1px solid var(--gm); border-radius: 6px; padding: 12px 18px; font-size: 13px; color: var(--g); font-weight: 500; display: flex; gap: 24px; flex-wrap: wrap; }
+  .summary-bar span { color: var(--gd); }
+
+  /* ── NOTA FUENTE ── */
+  .source-note { font-size: 12.5px; color: var(--hint); line-height: 1.7; padding: 12px 16px; background: var(--bg); border-radius: 6px; border-left: 3px solid var(--border); }
+  .source-note a { color: var(--g); text-decoration: none; }
+  .source-note a:hover { text-decoration: underline; }
+
+  /* ── PUB DATE ── */
+  .pub-date { font-size: 12px; color: var(--hint); text-align: right; padding: 4px 0 16px; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--gd); color: var(--gm); padding: 28px 48px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--gm); text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 20px; height: auto; min-height: 64px; flex-wrap: wrap; gap: 10px; padding-top: 12px; padding-bottom: 12px; }
+    .page-hero { padding: 36px 20px 28px; }
+    .page-h { font-size: 26px; }
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+    .stat-strip-item:nth-child(2) { border-right: none; }
+    .stat-strip-item:nth-child(3) { border-top: 1px solid #4A1020; }
+    .content-wrap { padding: 24px 20px; }
+    .tbl td, .tbl th, .tbl2 td, .tbl2 th { padding: 8px 10px; }
+    .tbl2 td.rev-id { font-size: 10.5px; }
+    footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+  }
+  @media (max-width: 600px) {
+    .stat-strip { grid-template-columns: 1fr 1fr; }
+    .summary-bar { flex-direction: column; gap: 6px; }
+    .tbl thead th.issn, .tbl td.issn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAVEGACIÓN ── -->
+<nav>
+  <a class="nav-brand" href="https://a2p2nano.com/">
+    <div class="nav-logo">
+      <div class="nav-logo-top">
+        <span class="letter">A<span class="exp">2</span></span>
+        <span class="letter">P<span class="exp">2</span></span>
+      </div>
+      <div class="nav-logo-mid"></div>
+      <div class="nav-logo-bot">Nano</div>
+    </div>
+    <div class="nav-title">
+      <span class="nav-name">A²P²·Nano Group</span>
+      <span class="nav-sub">Advanced &amp; Applied Polymer·Nanocomposite Research Group</span>
+    </div>
+  </a>
+  <a class="nav-back" href="https://a2p2nano.com/">← Inicio</a>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="page-hero">
+  <div class="eyebrow"><span class="eyebrow-line"></span>Evidencias · Actividad académica</div>
+  <h1 class="page-h">Revisión por pares</h1>
+  <p class="page-sub">
+    Actividad de evaluación de manuscritos para revistas científicas internacionales. Cada revisión está registrada y verificada en ORCID, sincronizada desde Web of Science (Clarivate), American Chemical Society, Springer Nature y Wiley.
+  </p>
+  <a class="orcid-badge" href="https://orcid.org/0000-0002-5927-9494" target="_blank" rel="noopener">
+    <!-- ORCID logo SVG inline -->
+    <svg class="orcid-logo" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-label="ORCID">
+      <circle cx="128" cy="128" r="128" fill="#A6CE39"/>
+      <path d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7C191.7 111.2 178 93 148 93h-23.7v79.4z" fill="#fff"/>
+      <ellipse cx="85.6" cy="56.8" rx="9.8" ry="9.9" fill="#fff"/>
+    </svg>
+    <div class="orcid-text">
+      <span class="orcid-label">ORCID iD verificado</span>
+      <span class="orcid-id">0000-0002-5927-9494</span>
+    </div>
+  </a>
+</div>
+
+<!-- ── STAT STRIP ── -->
+<div class="stat-strip">
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">52</div>
+    <div class="stat-strip-l">Revisiones totales registradas</div>
+  </div>
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">14</div>
+    <div class="stat-strip-l">Revistas distintas</div>
+  </div>
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">22</div>
+    <div class="stat-strip-l">Revisiones verificadas 2024–2025</div>
+  </div>
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">4</div>
+    <div class="stat-strip-l">Fuentes de verificación</div>
+  </div>
+</div>
+
+<!-- ── CONTENIDO ── -->
+<div class="content-wrap">
+
+  <!-- TABLA 1: RESUMEN POR REVISTA -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Revisiones registradas en ORCID por revista · todos los años</div>
+    </div>
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>Revista</th>
+          <th class="issn">ISSN</th>
+          <th class="num">N.º</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="journal">Polymers</td>
+          <td class="issn">2073-4360</td>
+          <td class="num">29</td>
+        </tr>
+        <tr>
+          <td class="journal">Polymer Composites</td>
+          <td class="issn">0272-8397</td>
+          <td class="num">8</td>
+        </tr>
+        <tr>
+          <td class="journal">ACS Applied Polymer Materials</td>
+          <td class="issn">2637-6105</td>
+          <td class="num">3</td>
+        </tr>
+        <tr>
+          <td class="journal">ChemistrySelect</td>
+          <td class="issn">2365-6549</td>
+          <td class="num">2</td>
+        </tr>
+        <tr>
+          <td class="journal">Industrial &amp; Engineering Chemistry Research</td>
+          <td class="issn">1520-5045</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Journal of Materials Chemistry A</td>
+          <td class="issn">2050-7496</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Journal of Materials Science</td>
+          <td class="issn">0022-2461</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Cell Biochemistry and Function</td>
+          <td class="issn">1099-0844</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Polymers and Polymer Composites</td>
+          <td class="issn">1478-2391</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Journal of Elastomers and Plastics</td>
+          <td class="issn">1530-8006</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Membranes</td>
+          <td class="issn">2077-0375</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Molecules</td>
+          <td class="issn">1420-3049</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Magnetochemistry</td>
+          <td class="issn">2312-7481</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="journal">Chemistry of Materials</td>
+          <td class="issn">1520-5002</td>
+          <td class="num">1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Totales según el registro público de ORCID.</td>
+          <td class="total-n">52</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <!-- TABLA 2: DETALLE 2024–2025 -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Revisiones verificadas 2024–2025 · detalle</div>
+      <span class="card-note">Identificadores de revisión emitidos por las editoriales</span>
+    </div>
+    <table class="tbl2">
+      <thead>
+        <tr>
+          <th style="width:60px">Año</th>
+          <th style="width:230px">Revista</th>
+          <th>Identificador ORCID de la revisión</th>
+          <th style="width:170px">Fuente de verificación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 2024 -->
+        <tr class="yr-2024">
+          <td class="year">2024</td>
+          <td class="journal2">Polymers</td>
+          <td class="rev-id">zIfFoqGv</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2024">
+          <td class="year">2024</td>
+          <td class="journal2">Polymers</td>
+          <td class="rev-id">QelOIIFi</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2024">
+          <td class="year">2024</td>
+          <td class="journal2">Polymers</td>
+          <td class="rev-id">J69EgakQ</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2024">
+          <td class="year">2024</td>
+          <td class="journal2">Polymer Composites</td>
+          <td class="rev-id">GZnoEofu</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2024">
+          <td class="year">2024</td>
+          <td class="journal2">Cell Biochemistry and Function</td>
+          <td class="rev-id">SnIOEWvD</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2024">
+          <td class="year">2024</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">yjd8M17t</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="subtotal-row">
+          <td colspan="4" style="padding: 7px 14px;">Subtotal 2024: 6 revisiones</td>
+        </tr>
+        <!-- 2025 -->
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2">Journal of Materials Chemistry A</td>
+          <td class="rev-id">NWF8NZv0</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2">Journal of Materials Science</td>
+          <td class="rev-id">dc9c2d86-27e8-43c7-8eb4-dbae40f36f20</td>
+          <td class="source"><span class="source-badge src-sn">Springer Nature</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2">Industrial &amp; Engineering Chemistry Research</td>
+          <td class="rev-id">ACS-25-40422389</td>
+          <td class="source"><span class="source-badge src-acs">American Chemical Society</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2">ACS Applied Polymer Materials</td>
+          <td class="rev-id">ACS-25-40234452</td>
+          <td class="source"><span class="source-badge src-acs">American Chemical Society</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2">ChemistrySelect</td>
+          <td class="rev-id">6c53c7f3-a49a-47f4-b08a-9f0b19155806</td>
+          <td class="source"><span class="source-badge src-wil">Wiley-VCH</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2">ChemistrySelect</td>
+          <td class="rev-id">DZpMguri</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— ACS (ver registro ORCID)</td>
+          <td class="rev-id">ACS-25-40283503</td>
+          <td class="source"><span class="source-badge src-acs">American Chemical Society</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— ACS (ver registro ORCID)</td>
+          <td class="rev-id">ACS-25-40215474</td>
+          <td class="source"><span class="source-badge src-acs">American Chemical Society</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">ixjX6xBe</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">kTwMy6Oc</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">IL1bAiaL</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">Rh3UjXnQ</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">twgsKNki</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">Qh2U6wzv</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">d3vhWtBE</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="yr-2025">
+          <td class="year">2025</td>
+          <td class="journal2 dash">— (ver registro ORCID)</td>
+          <td class="rev-id">EYMiFVMd</td>
+          <td class="source"><span class="source-badge src-wos">Web of Science</span></td>
+        </tr>
+        <tr class="subtotal-row">
+          <td colspan="4" style="padding: 7px 14px;">Subtotal 2025: 16 revisiones</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Resumen y nota -->
+    <div style="padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;">
+      <div class="summary-bar">
+        2024: <span>6 revisiones</span> &nbsp;·&nbsp;
+        2025: <span>16 revisiones</span> &nbsp;·&nbsp;
+        Total verificado 2024–2025: <span>22 revisiones</span>
+      </div>
+      <p class="source-note">
+        Las filas con "—" corresponden a revisiones verificadas cuya revista se consulta en el registro ORCID enlazado:
+        <a href="https://orcid.org/0000-0002-5927-9494" target="_blank" rel="noopener">orcid.org/0000-0002-5927-9494</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="pub-date">Página publicada el 15 de octubre de 2026 · <a href="https://a2p2nano.com/" style="color:var(--hint)">a2p2nano.com</a></div>
+
+</div><!-- /content-wrap -->
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div>
+    <strong style="color:#fff;">A²P²·Nano Group</strong> · Departamento de Polímeros, FCQ, Universidad de Concepción<br>
+    <a href="https://a2p2nano.com/">a2p2nano.com</a> · <a href="mailto:haguilar@udec.cl">haguilar@udec.cl</a>
+  </div>
+  <div style="text-align:right; color:var(--hint)">
+    ORCID: <a href="https://orcid.org/0000-0002-5927-9494" target="_blank" rel="noopener" style="color:var(--gm)">0000-0002-5927-9494</a>
+  </div>
+</footer>
+
+</body>
+</html>
