@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ponencias en congresos científicos · Dr. Héctor Aguilar Bolados — A²P²·Nano Group</title>
+<meta name="description" content="Presentaciones del Dr. Héctor Aguilar Bolados en congresos científicos nacionales e internacionales. A²P²·Nano Group, Universidad de Concepción.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ponencias en congresos científicos · Dr. Héctor Aguilar Bolados">
+<meta property="og:description" content="Presentaciones de resultados de investigación del A²P²·Nano Group en congresos científicos nacionales e internacionales.">
+<meta property="og:url" content="https://a2p2nano.com/vinculacion/ponencias/">
+<meta property="og:site_name" content="A²P²·Nano Group">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9N86EPX3T1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9N86EPX3T1');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --g:  #5C1020;
+    --gd: #3D0B16;
+    --gl: #F9ECED;
+    --gm: #D4A8AA;
+    --bg: #F5F5F5;
+    --surface: #ffffff;
+    --border: #DEDEDE;
+    --text: #111111;
+    --muted: #444444;
+    --hint: #888888;
+    --serif: 'Libre Baskerville', serif;
+    --sans: 'Outfit', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.75; font-size: 15px; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 40px; height: 76px;
+    background: #fff; border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { display: flex; align-items: center; gap: 12px; cursor: pointer; text-decoration: none; }
+  .nav-logo { display:inline-flex; flex-direction:column; flex-shrink:0; border:1.5px solid var(--g); border-radius:6px; overflow:hidden; }
+  .nav-logo-top {
+    background: var(--g); padding: 8px 16px 6px;
+    font-family: var(--serif); font-size: 22px; font-weight: 700; color: #fff;
+    line-height: 1; display:flex; align-items:flex-start; justify-content:center; gap:8px;
+  }
+  .nav-logo-top .letter { display:inline-flex; align-items:flex-start; gap:2px; }
+  .nav-logo-top .exp { font-size:13px; font-weight:700; line-height:1; margin-top:1px; }
+  .nav-logo-mid { height:2px; background:#fff; }
+  .nav-logo-bot {
+    background: #fff; padding: 6px 16px;
+    font-family: var(--serif); font-size:13px; font-style:italic;
+    color: var(--g); text-align:center; font-weight:400; letter-spacing:0.04em;
+  }
+  .nav-title { display: flex; flex-direction: column; }
+  .nav-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.2; }
+  .nav-sub  { font-size: 10px; color: var(--hint); letter-spacing: 0.04em; }
+  .nav-back { font-size: 12.5px; color: var(--muted); text-decoration: none; display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 4px; border: 1px solid var(--border); transition: background 0.15s; white-space: nowrap; }
+  .nav-back:hover { background: var(--gl); color: var(--g); border-color: var(--gm); }
+
+  /* ── HERO ── */
+  .page-hero {
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 52px 48px 40px;
+  }
+  .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--g); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .eyebrow-line { width: 22px; height: 1px; background: var(--g); flex-shrink: 0; }
+  .page-h { font-family: var(--serif); font-size: 34px; line-height: 1.2; color: var(--text); font-weight: 700; margin-bottom: 12px; }
+  .page-sub { font-size: 15px; color: var(--muted); max-width: 680px; line-height: 1.8; }
+
+  /* ── STAT STRIP ── */
+  .stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--gd); }
+  .stat-strip-item { padding: 22px 28px; border-right: 1px solid #4A1020; }
+  .stat-strip-item:last-child { border-right: none; }
+  .stat-strip-n { font-family: var(--serif); font-size: 30px; color: #fff; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+  .stat-strip-l { font-size: 12px; color: var(--gm); font-weight: 300; }
+
+  /* ── LAYOUT ── */
+  .content-wrap { max-width: 1100px; margin: 0 auto; padding: 40px 48px; display: flex; flex-direction: column; gap: 36px; }
+
+  /* ── CARD ── */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .card-head { padding: 18px 24px 14px; border-bottom: 1px solid var(--border); display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-title { font-family: var(--serif); font-size: 15px; color: var(--text); font-weight: 700; }
+  .card-note { font-size: 12px; color: var(--hint); }
+
+  /* ── PONENCIAS TABLE ── */
+  .tbl-ponencias { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .tbl-ponencias thead tr { background: var(--gd); }
+  .tbl-ponencias thead th {
+    padding: 11px 16px; text-align: left;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gm);
+  }
+  .tbl-ponencias tbody tr { border-bottom: 1px solid var(--border); transition: background 0.12s; }
+  .tbl-ponencias tbody tr:last-child { border-bottom: none; }
+  .tbl-ponencias tbody tr:hover { background: var(--bg); }
+  .tbl-ponencias td { padding: 16px; vertical-align: top; color: var(--muted); line-height: 1.55; }
+
+  /* column styles */
+  .col-fecha { white-space: nowrap; font-size: 12.5px; color: var(--hint); font-weight: 400; min-width: 110px; }
+  .col-congreso { min-width: 200px; }
+  .col-congreso .cong-name { font-weight: 600; color: var(--text); font-size: 13.5px; margin-bottom: 3px; }
+  .col-congreso .cong-lugar { font-size: 12px; color: var(--hint); }
+  .col-titulo { min-width: 260px; }
+  .col-titulo .titulo-text { font-style: italic; color: var(--text); font-size: 13px; line-height: 1.6; margin-bottom: 6px; }
+  .col-titulo .codigo { font-size: 11px; color: var(--hint); font-family: monospace; }
+  .col-modalidad { min-width: 110px; }
+  .col-autores { font-size: 12.5px; min-width: 180px; }
+
+  /* badges */
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 500; letter-spacing: 0.05em; padding: 3px 9px; border-radius: 3px; white-space: nowrap; }
+  .badge-oral { background: #FFF3E0; color: #7D3C00; }
+  .badge-poster { background: #EAF4FB; color: #1A5276; }
+  .badge-oral::before { content: ""; display:inline-block; width:7px; height:7px; border-radius:50%; background:#E67E22; flex-shrink:0; }
+  .badge-poster::before { content: ""; display:inline-block; width:7px; height:7px; border-radius:50%; background:#2E86C1; flex-shrink:0; }
+
+  /* ── RELATED LINK ── */
+  .related-link {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 20px; background: var(--gl);
+    border: 1px solid var(--gm); border-radius: 6px;
+    text-decoration: none; transition: background 0.15s;
+  }
+  .related-link:hover { background: #F0D8DA; }
+  .related-icon { width: 38px; height: 38px; border-radius: 6px; background: var(--g); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .related-icon svg { width: 18px; height: 18px; fill: none; stroke: #fff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .related-body { flex: 1; }
+  .related-label { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--g); margin-bottom: 2px; }
+  .related-name { font-size: 14px; font-weight: 500; color: var(--text); line-height: 1.35; }
+  .related-meta { font-size: 12px; color: var(--hint); margin-top: 2px; }
+  .related-arrow { font-size: 18px; color: var(--gm); }
+
+  /* ── PUB DATE ── */
+  .pub-date { font-size: 12px; color: var(--hint); text-align: right; padding: 4px 0 16px; }
+  .pub-date a { color: var(--hint); text-decoration: none; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--gd); color: var(--gm); padding: 28px 48px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--gm); text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 20px; height: auto; min-height: 64px; flex-wrap: wrap; gap: 10px; padding-top: 12px; padding-bottom: 12px; }
+    .page-hero { padding: 36px 20px 28px; }
+    .page-h { font-size: 26px; }
+    .stat-strip { grid-template-columns: repeat(3, 1fr); }
+    .content-wrap { padding: 24px 20px; }
+    /* tabla: colapsar en tarjetas */
+    .tbl-ponencias thead { display: none; }
+    .tbl-ponencias, .tbl-ponencias tbody, .tbl-ponencias tr, .tbl-ponencias td { display: block; width: 100%; }
+    .tbl-ponencias tr { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 16px; overflow: hidden; }
+    .tbl-ponencias td { border-bottom: 1px solid var(--bg); padding: 10px 14px; }
+    .tbl-ponencias td:last-child { border-bottom: none; }
+    .tbl-ponencias td::before { content: attr(data-label); display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--g); margin-bottom: 4px; }
+    footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+  }
+  @media (max-width: 600px) {
+    .stat-strip { grid-template-columns: 1fr; }
+    .stat-strip-item { border-right: none; border-bottom: 1px solid #4A1020; }
+    .stat-strip-item:last-child { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAVEGACIÓN ── -->
+<nav>
+  <a class="nav-brand" href="https://a2p2nano.com/">
+    <div class="nav-logo">
+      <div class="nav-logo-top">
+        <span class="letter">A<span class="exp">2</span></span>
+        <span class="letter">P<span class="exp">2</span></span>
+      </div>
+      <div class="nav-logo-mid"></div>
+      <div class="nav-logo-bot">Nano</div>
+    </div>
+    <div class="nav-title">
+      <span class="nav-name">A²P²·Nano Group</span>
+      <span class="nav-sub">Advanced &amp; Applied Polymer·Nanocomposite Research Group</span>
+    </div>
+  </a>
+  <a class="nav-back" href="https://a2p2nano.com/#vinculacion">← Vinculación con el Medio</a>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="page-hero">
+  <div class="eyebrow"><span class="eyebrow-line"></span>Vinculación con el Medio · Difusión científica</div>
+  <h1 class="page-h">Ponencias en congresos científicos</h1>
+  <p class="page-sub">
+    Presentaciones de resultados de investigación del A²P²·Nano Group en congresos científicos nacionales e internacionales, con el Dr. Héctor Aguilar Bolados como expositor.
+  </p>
+</div>
+
+<!-- ── STAT STRIP ── -->
+<div class="stat-strip">
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">3</div>
+    <div class="stat-strip-l">Ponencias registradas</div>
+  </div>
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">2</div>
+    <div class="stat-strip-l">Presentaciones orales</div>
+  </div>
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">1</div>
+    <div class="stat-strip-l">Pósteres</div>
+  </div>
+</div>
+
+<!-- ── CONTENIDO ── -->
+<div class="content-wrap">
+
+  <!-- TABLA DE PONENCIAS -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Historial de ponencias · Dr. Héctor Aguilar Bolados como expositor</div>
+      <span class="card-note">Orden cronológico inverso</span>
+    </div>
+    <table class="tbl-ponencias">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Congreso · Lugar</th>
+          <th>Trabajo presentado</th>
+          <th>Modalidad</th>
+          <th>Autores</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- SLAP 2024 — ORAL -->
+        <tr>
+          <td class="col-fecha" data-label="Fecha">02–06 dic. 2024</td>
+          <td class="col-congreso" data-label="Congreso">
+            <div class="cong-name">XVIII Simposio Latinoamericano de Polímeros (SLAP 2024)</div>
+            <div class="cong-lugar">Puerto Varas, Chile</div>
+          </td>
+          <td class="col-titulo" data-label="Trabajo presentado">
+            <div class="titulo-text">"Study of the Influence of High Bismuth(III) Oxide Content on the Mechanical, Thermal and Gamma Radiation Attenuation Properties of Fluoroelastomer Based Composites"</div>
+            <div class="codigo">Cód. aceptación: R202408307612</div>
+          </td>
+          <td class="col-modalidad" data-label="Modalidad"><span class="badge badge-oral">Oral</span></td>
+          <td class="col-autores" data-label="Autores">H. Aguilar Bolados et al.</td>
+        </tr>
+
+        <!-- SLAP 2024 — PÓSTER -->
+        <tr>
+          <td class="col-fecha" data-label="Fecha">02–06 dic. 2024</td>
+          <td class="col-congreso" data-label="Congreso">
+            <div class="cong-name">XVIII Simposio Latinoamericano de Polímeros (SLAP 2024)</div>
+            <div class="cong-lugar">Puerto Varas, Chile</div>
+          </td>
+          <td class="col-titulo" data-label="Trabajo presentado">
+            <div class="titulo-text">"Compositos a base de hojas de <em>Eucalyptus nitens</em> y caucho natural como alternativa valiosa para el desarrollo de materiales elastoméricos de bajo impacto microbiológico"</div>
+            <div class="codigo">Cód.: R202408301743 · Libro de pósteres, p. 128</div>
+          </td>
+          <td class="col-modalidad" data-label="Modalidad"><span class="badge badge-poster">Póster</span></td>
+          <td class="col-autores" data-label="Autores">H. Aguilar Bolados, N. Rosales, M. Dahrouch, J. Becerra, C. Pérez</td>
+        </tr>
+
+        <!-- JLTC 2023 -->
+        <tr>
+          <td class="col-fecha" data-label="Fecha">18–22 sep. 2023</td>
+          <td class="col-congreso" data-label="Congreso">
+            <div class="cong-name">XVII Jornadas Latinoamericanas de Tecnología del Caucho</div>
+            <div class="cong-lugar">Lima, Perú</div>
+          </td>
+          <td class="col-titulo" data-label="Trabajo presentado">
+            <div class="titulo-text">"Fluoroelastomers composites for leading edge technologies"</div>
+          </td>
+          <td class="col-modalidad" data-label="Modalidad"><span class="badge badge-oral">Oral</span></td>
+          <td class="col-autores" data-label="Autores">H. Aguilar Bolados, A. Bascuñán Heredia, A. Contreras Soto</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ENLACE RELACIONADO: SEMINARIO 2024 -->
+  <div>
+    <p style="font-size:12px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--hint); margin-bottom:10px;">Actividad relacionada</p>
+    <a class="related-link" href="/vinculacion/seminario-2024/">
+      <div class="related-icon">
+        <!-- presentación / pizarrón icon -->
+        <svg viewBox="0 0 24 24">
+          <rect x="2" y="3" width="20" height="13" rx="1"/>
+          <path d="M8 21l4-4 4 4M12 17v-4"/>
+        </svg>
+      </div>
+      <div class="related-body">
+        <div class="related-label">Seminario</div>
+        <div class="related-name">Seminario "Compósitos Poliméricos: Concepto y Aplicación"</div>
+        <div class="related-meta">Dr. Héctor Aguilar Bolados como expositor · 2024</div>
+      </div>
+      <div class="related-arrow">→</div>
+    </a>
+  </div>
+
+  <div class="pub-date">Página publicada el 15 de octubre de 2026 · <a href="https://a2p2nano.com/">a2p2nano.com</a></div>
+
+</div><!-- /content-wrap -->
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div>
+    <strong style="color:#fff;">A²P²·Nano Group</strong> · Departamento de Polímeros, FCQ, Universidad de Concepción<br>
+    <a href="https://a2p2nano.com/">a2p2nano.com</a> · <a href="mailto:haguilar@udec.cl">haguilar@udec.cl</a>
+  </div>
+  <div style="text-align:right; color:var(--hint);">
+    Vinculación con el Medio · <a href="https://a2p2nano.com/#vinculacion" style="color:var(--gm);">ver todas las actividades</a>
+  </div>
+</footer>
+
+</body>
+</html>
