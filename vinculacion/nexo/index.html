@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programa NEXO-FCQ · Síntesis de Nylon — A²P²·Nano Group</title>
+<meta name="description" content="Actividades del Dr. Héctor Aguilar Bolados en el Programa NEXO de la FCQ-UdeC: experiencia de laboratorio 'Síntesis de Nylon' para estudiantes de enseñanza media.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Programa NEXO-FCQ · Laboratorio Síntesis de Nylon">
+<meta property="og:description" content="El Dr. Héctor Aguilar Bolados dirige la experiencia de laboratorio 'Síntesis de Nylon' para estudiantes de enseñanza media en el marco del Programa NEXO de la FCQ-UdeC.">
+<meta property="og:url" content="https://a2p2nano.com/vinculacion/nexo/">
+<meta property="og:site_name" content="A²P²·Nano Group">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9N86EPX3T1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9N86EPX3T1');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --g:  #5C1020;
+    --gd: #3D0B16;
+    --gl: #F9ECED;
+    --gm: #D4A8AA;
+    --bg: #F5F5F5;
+    --surface: #ffffff;
+    --border: #DEDEDE;
+    --text: #111111;
+    --muted: #444444;
+    --hint: #888888;
+    --serif: 'Libre Baskerville', serif;
+    --sans: 'Outfit', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.75; font-size: 15px; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 40px; height: 76px;
+    background: #fff; border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav-logo { display:inline-flex; flex-direction:column; flex-shrink:0; border:1.5px solid var(--g); border-radius:6px; overflow:hidden; }
+  .nav-logo-top { background: var(--g); padding: 8px 16px 6px; font-family: var(--serif); font-size: 22px; font-weight: 700; color: #fff; line-height: 1; display:flex; align-items:flex-start; justify-content:center; gap:8px; }
+  .nav-logo-top .letter { display:inline-flex; align-items:flex-start; gap:2px; }
+  .nav-logo-top .exp { font-size:13px; font-weight:700; line-height:1; margin-top:1px; }
+  .nav-logo-mid { height:2px; background:#fff; }
+  .nav-logo-bot { background: #fff; padding: 6px 16px; font-family: var(--serif); font-size:13px; font-style:italic; color: var(--g); text-align:center; font-weight:400; letter-spacing:0.04em; }
+  .nav-title { display: flex; flex-direction: column; }
+  .nav-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.2; }
+  .nav-sub  { font-size: 10px; color: var(--hint); letter-spacing: 0.04em; }
+  .nav-back { font-size: 12.5px; color: var(--muted); text-decoration: none; display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 4px; border: 1px solid var(--border); transition: background 0.15s; white-space: nowrap; }
+  .nav-back:hover { background: var(--gl); color: var(--g); border-color: var(--gm); }
+
+  /* ── HERO ── */
+  .page-hero { background: var(--surface); border-bottom: 1px solid var(--border); padding: 52px 48px 40px; }
+  .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--g); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .eyebrow-line { width: 22px; height: 1px; background: var(--g); flex-shrink: 0; }
+  .page-h { font-family: var(--serif); font-size: 34px; line-height: 1.2; color: var(--text); font-weight: 700; margin-bottom: 12px; }
+  .page-sub { font-size: 15px; color: var(--muted); max-width: 720px; line-height: 1.8; }
+
+  /* ── STAT STRIP ── */
+  .stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--gd); }
+  .stat-strip-item { padding: 22px 28px; border-right: 1px solid #4A1020; }
+  .stat-strip-item:last-child { border-right: none; }
+  .stat-strip-n { font-family: var(--serif); font-size: 30px; color: #fff; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+  .stat-strip-l { font-size: 12px; color: var(--gm); font-weight: 300; }
+
+  /* ── LAYOUT ── */
+  .content-wrap { max-width: 900px; margin: 0 auto; padding: 40px 48px; display: flex; flex-direction: column; gap: 32px; }
+
+  /* ── CARD ── */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .card-head { padding: 16px 22px 13px; border-bottom: 1px solid var(--border); display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-title { font-family: var(--serif); font-size: 14.5px; color: var(--text); font-weight: 700; }
+
+  /* ── TABLA VISITAS ── */
+  .tbl { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .tbl thead tr { background: var(--gd); }
+  .tbl thead th { padding: 10px 16px; text-align: left; font-size: 11px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gm); }
+  .tbl thead th.num { text-align: right; }
+  .tbl tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+  .tbl tbody tr:last-child { border-bottom: none; }
+  .tbl tbody tr:hover { background: var(--bg); }
+  .tbl td { padding: 13px 16px; vertical-align: middle; color: var(--muted); }
+  .tbl td.fecha { font-size: 12.5px; white-space: nowrap; color: var(--hint); }
+  .tbl td.colegio { font-weight: 500; color: var(--text); }
+  .tbl td.comuna { font-size: 13px; }
+  .tbl td.num { text-align: right; font-family: var(--serif); font-size: 18px; color: var(--g); font-weight: 700; }
+  .tbl tfoot tr { background: var(--gl); border-top: 2px solid var(--gm); }
+  .tbl tfoot td { padding: 11px 16px; font-size: 13px; color: var(--g); font-weight: 500; }
+  .tbl tfoot td.total-n { text-align: right; font-family: var(--serif); font-size: 20px; color: var(--g); font-weight: 700; }
+
+  /* ── NOTA ── */
+  .nota { font-size: 12px; color: var(--hint); padding: 10px 16px; background: var(--bg); border-top: 1px solid var(--border); line-height: 1.6; }
+
+  /* ── FICHA ── */
+  .ficha { display: flex; flex-direction: column; gap: 0; }
+  .ficha-row { display: flex; gap: 16px; padding: 12px 22px; border-bottom: 1px solid var(--bg); }
+  .ficha-row:last-child { border-bottom: none; }
+  .ficha-label { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--g); min-width: 140px; flex-shrink: 0; padding-top: 2px; }
+  .ficha-val { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+  /* ── PUB DATE ── */
+  .pub-date { font-size: 12px; color: var(--hint); text-align: right; }
+  .pub-date a { color: var(--hint); text-decoration: none; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--gd); color: var(--gm); padding: 28px 48px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--gm); text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 20px; height: auto; min-height: 64px; flex-wrap: wrap; gap: 10px; padding-top: 12px; padding-bottom: 12px; }
+    .page-hero { padding: 36px 20px 28px; }
+    .page-h { font-size: 26px; }
+    .stat-strip { grid-template-columns: repeat(3, 1fr); }
+    .content-wrap { padding: 24px 20px; }
+    .ficha-row { flex-direction: column; gap: 4px; }
+    .ficha-label { min-width: unset; }
+    /* tabla → tarjetas */
+    .tbl thead { display: none; }
+    .tbl, .tbl tbody, .tbl tr, .tbl td { display: block; width: 100%; }
+    .tbl tr { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
+    .tbl td { border-bottom: 1px solid var(--bg); padding: 8px 14px; }
+    .tbl td:last-child { border-bottom: none; }
+    .tbl td::before { content: attr(data-label); display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--g); margin-bottom: 3px; }
+    .tbl tfoot { display: block; }
+    .tbl tfoot tr { display: flex; justify-content: space-between; border-radius: 6px; margin-top: 4px; }
+    footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+  }
+  @media (max-width: 600px) {
+    .stat-strip { grid-template-columns: 1fr; }
+    .stat-strip-item { border-right: none; border-bottom: 1px solid #4A1020; }
+    .stat-strip-item:last-child { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAVEGACIÓN ── -->
+<nav>
+  <a class="nav-brand" href="https://a2p2nano.com/">
+    <div class="nav-logo">
+      <div class="nav-logo-top">
+        <span class="letter">A<span class="exp">2</span></span>
+        <span class="letter">P<span class="exp">2</span></span>
+      </div>
+      <div class="nav-logo-mid"></div>
+      <div class="nav-logo-bot">Nano</div>
+    </div>
+    <div class="nav-title">
+      <span class="nav-name">A²P²·Nano Group</span>
+      <span class="nav-sub">Advanced &amp; Applied Polymer·Nanocomposite Research Group</span>
+    </div>
+  </a>
+  <a class="nav-back" href="https://a2p2nano.com/#vinculacion">← Vinculación con el Medio</a>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="page-hero">
+  <div class="eyebrow"><span class="eyebrow-line"></span>Vinculación con el Medio · Extensión educativa</div>
+  <h1 class="page-h">Programa NEXO-FCQ · Laboratorio "Síntesis de Nylon"</h1>
+  <p class="page-sub">
+    El Programa NEXO de la Facultad de Ciencias Químicas de la Universidad de Concepción acerca la química a estudiantes de enseñanza media mediante experiencias de laboratorio. En estas visitas, el Dr. Héctor Aguilar Bolados dirigió la experiencia <em>"Síntesis de Nylon"</em>: la síntesis de Nylon 6,6 por polimerización por condensación, con una introducción sobre los polímeros y sus aplicaciones cotidianas.
+  </p>
+</div>
+
+<!-- ── STAT STRIP ── -->
+<div class="stat-strip">
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">4</div>
+    <div class="stat-strip-l">Visitas realizadas</div>
+  </div>
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">76</div>
+    <div class="stat-strip-l">Estudiantes participantes</div>
+  </div>
+  <div class="stat-strip-item">
+    <div class="stat-strip-n">2025–2026</div>
+    <div class="stat-strip-l">Período de actividad</div>
+  </div>
+</div>
+
+<!-- ── CONTENIDO ── -->
+<div class="content-wrap">
+
+  <!-- FICHA TÉCNICA -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Ficha de la actividad</div>
+    </div>
+    <div class="ficha">
+      <div class="ficha-row">
+        <div class="ficha-label">Programa</div>
+        <div class="ficha-val">NEXO — Facultad de Ciencias Químicas, Universidad de Concepción</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Actividad</div>
+        <div class="ficha-val">Experiencia de laboratorio: <em>Síntesis de Nylon 6,6 por polimerización por condensación</em></div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Responsable</div>
+        <div class="ficha-val">Dr. Héctor Aguilar Bolados, Departamento de Polímeros, FCQ-UdeC</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Laboratorio</div>
+        <div class="ficha-val">Laboratorio de Docencia "Prof. Bernabé L. Rivas", Departamento de Polímeros, FCQ-UdeC</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Público objetivo</div>
+        <div class="ficha-val">Estudiantes de enseñanza media (1°–4° Medio)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLA DE VISITAS -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Registro de visitas</div>
+    </div>
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Establecimiento</th>
+          <th>Comuna</th>
+          <th class="num">Estudiantes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fecha" data-label="Fecha">29 jul. 2025</td>
+          <td class="colegio" data-label="Establecimiento">Colegio Aurora de Chile Sur</td>
+          <td data-label="Comuna">Chiguayante</td>
+          <td class="num" data-label="Estudiantes">12</td>
+        </tr>
+        <tr>
+          <td class="fecha" data-label="Fecha">11 sep. 2025</td>
+          <td class="colegio" data-label="Establecimiento">Kingston College</td>
+          <td data-label="Comuna">Concepción</td>
+          <td class="num" data-label="Estudiantes">≈15</td>
+        </tr>
+        <tr>
+          <td class="fecha" data-label="Fecha">27 nov. 2025</td>
+          <td class="colegio" data-label="Establecimiento">Colegio San Pedro Nolasco</td>
+          <td data-label="Comuna">Concepción</td>
+          <td class="num" data-label="Estudiantes">31</td>
+        </tr>
+        <tr>
+          <td class="fecha" data-label="Fecha">06 ago. 2026</td>
+          <td class="colegio" data-label="Establecimiento">Colegio Cholguán</td>
+          <td data-label="Comuna">Yungay</td>
+          <td class="num" data-label="Estudiantes">18</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total acumulado</td>
+          <td class="total-n">76</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="nota">
+      Total: 76 estudiantes (incluye una cifra aproximada, marcada ≈). Cifras según la coordinación del Programa NEXO-FCQ. La marcada ≈ es aproximada.
+    </div>
+  </div>
+
+  <div class="pub-date">Página publicada el 15 de octubre de 2026 · <a href="https://a2p2nano.com/">a2p2nano.com</a></div>
+
+</div><!-- /content-wrap -->
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div>
+    <strong style="color:#fff;">A²P²·Nano Group</strong> · Departamento de Polímeros, FCQ, Universidad de Concepción<br>
+    <a href="https://a2p2nano.com/">a2p2nano.com</a> · <a href="mailto:haguilar@udec.cl">haguilar@udec.cl</a>
+  </div>
+  <div style="text-align:right;">
+    Vinculación con el Medio · <a href="https://a2p2nano.com/#vinculacion" style="color:var(--gm);">ver todas las actividades</a>
+  </div>
+</footer>
+
+</body>
+</html>
