@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seminario "Compósitos Poliméricos: Concepto y Aplicación" · A²P²·Nano Group</title>
+<meta name="description" content="Seminario internacional sobre compósitos poliméricos celebrado el 28 de noviembre de 2024, FCQ-UdeC. Expositor invitado: Dr. Francis Avilés (CICY, México).">
+<meta property="og:type" content="article">
+<meta property="og:title" content='Seminario "Compósitos Poliméricos: Concepto y Aplicación" · FCQ-UdeC'>
+<meta property="og:description" content="28 de noviembre de 2024 · Auditorio Juan Perelló · FCQ, Universidad de Concepción">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9N86EPX3T1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9N86EPX3T1');</script>
+<style>
+:root{
+  --g:#5C1020;--gd:#3D0B16;--gl:#F9ECED;--gm:#D4A8AA;
+  --text:#1a1a1a;--muted:#6b7280;--border:#e5e7eb;--bg:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Outfit',sans-serif;color:var(--text);background:var(--bg);line-height:1.6;}
+a{color:var(--g);}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--gd);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo-box{width:32px;height:32px;background:var(--g);border:2px solid var(--gm);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.nav-logo-box span{font-family:'Libre Baskerville',serif;font-size:11px;font-weight:700;color:#fff;letter-spacing:-0.5px;line-height:1;}
+.nav-logo-text{font-size:14px;font-weight:600;color:#fff;letter-spacing:0.3px;}
+.nav-back{font-size:13px;color:var(--gm);text-decoration:none;display:flex;align-items:center;gap:4px;}
+.nav-back:hover{color:#fff;}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--gd) 0%,var(--g) 100%);color:#fff;padding:52px 24px 44px;}
+.hero-inner{max-width:860px;margin:0 auto;}
+.hero-eyebrow{font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gm);margin-bottom:12px;}
+.hero h1{font-family:'Libre Baskerville',serif;font-size:clamp(20px,4vw,32px);font-weight:700;line-height:1.25;margin-bottom:16px;}
+.hero-meta{font-size:14px;color:rgba(255,255,255,.8);display:flex;flex-wrap:wrap;gap:8px 20px;}
+.hero-meta span{display:flex;align-items:center;gap:6px;}
+
+/* STAT STRIP */
+.stat-strip{background:var(--gd);padding:20px 24px;}
+.stat-strip-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.stat-item{text-align:center;}
+.stat-n{font-size:clamp(22px,4vw,36px);font-weight:700;color:#fff;line-height:1;}
+.stat-label{font-size:12px;color:var(--gm);margin-top:4px;line-height:1.3;}
+
+/* CONTENT */
+.content-wrap{max-width:860px;margin:0 auto;padding:40px 24px;}
+h2{font-family:'Libre Baskerville',serif;font-size:20px;color:var(--g);margin-bottom:16px;margin-top:36px;}
+h2:first-child{margin-top:0;}
+
+/* FICHA */
+.ficha{background:var(--gl);border-radius:10px;padding:24px;margin-bottom:32px;}
+.ficha-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+.ficha-item{}
+.ficha-label{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--g);margin-bottom:4px;}
+.ficha-value{font-size:14px;color:var(--text);}
+
+/* PROYECTOS BADGE */
+.badge-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.badge{background:#fff;border:1px solid var(--gm);border-radius:20px;padding:4px 12px;font-size:12px;font-weight:500;color:var(--g);}
+
+/* TABLE */
+.table-wrap{overflow-x:auto;margin-bottom:8px;}
+table{width:100%;border-collapse:collapse;font-size:14px;}
+thead{background:var(--g);color:#fff;}
+thead th{padding:10px 12px;text-align:left;font-weight:600;font-size:13px;}
+tbody tr:nth-child(even){background:#f9f9f9;}
+tbody tr:hover{background:var(--gl);}
+td,th{padding:10px 12px;border-bottom:1px solid var(--border);}
+td.talk{font-style:italic;}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .resp-table thead{display:none;}
+  .resp-table tbody tr{display:block;border:1px solid var(--border);border-radius:8px;margin-bottom:12px;padding:10px 12px;}
+  .resp-table td{display:block;border:none;padding:4px 0;}
+  .resp-table td::before{content:attr(data-label);font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;display:block;margin-bottom:2px;}
+}
+
+/* PDF LINK */
+.pdf-link{display:inline-flex;align-items:center;gap:8px;background:var(--g);color:#fff;text-decoration:none;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;margin-top:24px;transition:background .2s;}
+.pdf-link:hover{background:var(--gd);}
+
+/* PUB DATE */
+.pub-date{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);}
+.pub-date a{color:var(--g);}
+
+/* FOOTER */
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:24px;margin-top:48px;}
+footer .fi{max-width:860px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;}
+footer a{color:rgba(255,255,255,.75);text-decoration:none;}
+footer a:hover{color:#fff;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="https://a2p2nano.com">
+    <div class="nav-logo-box"><span>A²P²<br>Nano</span></div>
+    <span class="nav-logo-text">A²P²·Nano Group</span>
+  </a>
+  <a class="nav-back" href="https://a2p2nano.com/#vinculacion">
+    <i class="ti ti-arrow-left"></i> Vinculación
+  </a>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Vinculación · Seminario internacional</div>
+    <h1>Compósitos Poliméricos:<br>Concepto y Aplicación</h1>
+    <div class="hero-meta">
+      <span><i class="ti ti-calendar"></i> 28 de noviembre de 2024 &nbsp;·&nbsp; 15:00 h</span>
+      <span><i class="ti ti-map-pin"></i> Auditorio Juan Perelló, FCQ-UdeC</span>
+    </div>
+  </div>
+</div>
+
+<div class="stat-strip">
+  <div class="stat-strip-inner">
+    <div class="stat-item">
+      <div class="stat-n">3</div>
+      <div class="stat-label">Conferencias<br>presentadas</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">2</div>
+      <div class="stat-label">Instituciones<br>participantes</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-n">2024</div>
+      <div class="stat-label">Año de<br>realización</div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <h2>Ficha del seminario</h2>
+  <div class="ficha">
+    <div class="ficha-grid">
+      <div class="ficha-item">
+        <div class="ficha-label">Fecha y hora</div>
+        <div class="ficha-value">28 de noviembre de 2024 · 15:00 h</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Lugar</div>
+        <div class="ficha-value">Auditorio Juan Perelló<br>Facultad de Ciencias Químicas, Universidad de Concepción</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Expositor internacional</div>
+        <div class="ficha-value">Dr. Francis Avilés<br>Centro de Investigación Científica de Yucatán (CICY), México</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Organización</div>
+        <div class="ficha-value">A²P²·Nano Group · Departamento de Polímeros, FCQ-UdeC</div>
+      </div>
+    </div>
+    <div style="margin-top:20px;">
+      <div class="ficha-label">Proyectos asociados</div>
+      <div class="badge-row">
+        <span class="badge">FONDECYT 1211450</span>
+        <span class="badge">FONDEQUIP EQM220083</span>
+        <span class="badge">VRID 2024001180INV</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Programa</h2>
+  <div class="table-wrap">
+    <table class="resp-table">
+      <thead>
+        <tr>
+          <th>Expositor</th>
+          <th>Institución</th>
+          <th>Conferencia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Expositor"><strong>Dr. Francis Avilés</strong></td>
+          <td data-label="Institución">CICY, México</td>
+          <td class="talk" data-label="Conferencia">Polímeros nanocompuestos inteligentes con capacidades de autosensado</td>
+        </tr>
+        <tr>
+          <td data-label="Expositor"><strong>Dr. Héctor Aguilar Bolados</strong></td>
+          <td data-label="Institución">FCQ, UdeC</td>
+          <td class="talk" data-label="Conferencia">Comprendiendo el efecto del alto contenido de óxido de bismuto(III) en las propiedades y dinámica molecular de un elastómero</td>
+        </tr>
+        <tr>
+          <td data-label="Expositor"><strong>Dr. Bruno F. Urbano</strong></td>
+          <td data-label="Institución">FCQ, UdeC</td>
+          <td class="talk" data-label="Conferencia">Potenciando las propiedades mecánicas mediante enlaces covalentes dinámicos en la interfaz polímero-nanopartícula</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <a class="pdf-link" href="/vinculacion/seminario-2024/afiche.pdf" target="_blank">
+    <i class="ti ti-file-type-pdf"></i>
+    Ver afiche del seminario (PDF)
+  </a>
+
+  <div class="pub-date">
+    <p>Página publicada el 16 de octubre de 2026</p>
+    <p><a href="https://a2p2nano.com">a2p2nano.com</a></p>
+  </div>
+</div>
+
+<footer>
+  <div class="fi">
+    <div><strong style="color:#fff;">A²P²·Nano Group</strong> · <a href="https://a2p2nano.com">a2p2nano.com</a></div>
+    <div style="text-align:right;"><a href="https://a2p2nano.com/#vinculacion" style="color:var(--gm);">volver al sitio</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
